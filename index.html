@@ -11,40 +11,60 @@
         <h1>Artesanías de El Salvador</h1>
         <nav>
             <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Catálogo</a></li>
-                <li><a href="#">Sobre Nosotros</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#catalogo">Catálogo</a></li>
+                <li><a href="#nosotros">Sobre Nosotros</a></li>
+                <li><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
     </header>
 
-    <section class="hero">
+    <section id="inicio" class="hero">
         <div class="hero-content">
             <h2>Descubre la belleza de la artesanía salvadoreña</h2>
             <p>Piezas únicas hechas a mano con tradición y pasión.</p>
-            <button>Explorar Catálogo</button>
+            <a href="#catalogo" class="btn">Explorar Catálogo</a> 
         </div>
     </section>
 
-    <section class="featured-products">
+    <section id="catalogo" class="featured-products">
         <h2>Productos Destacados</h2>
         <div class="product-grid">
             <div class="product">
                 <img src="images/artesania1.jpg" alt="Artesanía 1">
-                <h3>Nombre de la artesanía</h3>
-                <p>Descripción breve de la artesanía.</p>
+                <h3>Nombre de la artesanía 1</h3>
+                <p>Descripción breve de la artesanía 1.  Elaborada con barro negro, técnica ancestral de El Salvador.</p>
                 <p class="price">$15.00</p>
-                <button>Agregar al carrito</button>
+                <button class="btn">Agregar al carrito</button>
             </div>
             <div class="product">
                 <img src="images/artesania2.jpg" alt="Artesanía 2">
-                <h3>Nombre de la artesanía</h3>
-                <p>Descripción breve de la artesanía.</p>
+                <h3>Nombre de la artesanía 2</h3>
+                <p>Descripción breve de la artesanía 2. Tejido a mano con hilos de colores vibrantes.</p>
                 <p class="price">$25.00</p>
-                <button>Agregar al carrito</button>
+                <button class="btn">Agregar al carrito</button>
             </div>
             </div>
+    </section>
+
+    <section id="nosotros" class="about">
+        <h2>Sobre Nosotros</h2>
+        <p>Somos una plataforma dedicada a promover y comercializar las artesanías de El Salvador. 
+           Trabajamos directamente con artesanos locales, apoyando el comercio justo y la preservación 
+           de las técnicas tradicionales. </p>
+        <p>Nuestra misión es dar a conocer la riqueza cultural de El Salvador a través de sus artesanías, 
+           ofreciendo productos de alta calidad a clientes de todo el mundo.</p>
+    </section>
+
+    <section id="contacto" class="contact">
+        <h2>Contacto</h2>
+        <p>¿Tienes alguna pregunta? ¡Contáctanos!</p>
+        <form>
+            <input type="text" placeholder="Nombre" required>
+            <input type="email" placeholder="Correo electrónico" required>
+            <textarea placeholder="Mensaje" required></textarea>
+            <button type="submit" class="btn">Enviar</button>
+        </form>
     </section>
 
     <footer>
