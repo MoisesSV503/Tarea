@@ -1,11 +1,19 @@
+/* Estilos generales */
 body {
-    font-family: sans-serif;
+    font-family: 'Arial', sans-serif; 
     margin: 0;
+    background-color: #f8f8f8;
+    color: #333;
 }
 
 header {
-    background-color: #f0f0f0;
+    background-color: #fff;
     padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    position: fixed; 
+    width: 100%;
+    top: 0;
+    z-index: 100; 
 }
 
 nav ul {
@@ -17,46 +25,113 @@ nav ul {
 
 nav li {
     display: inline-block;
-    margin: 0 10px;
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #e44d26; 
+    font-weight: bold;
+    transition: color 0.3s ease; 
+}
+
+nav a:hover {
+    color: #f0ad4e; 
 }
 
 .hero {
-    background-image: url("images/hero-background.jpg"); /* Reemplaza con tu imagen */
+    background-image: url("images/hero-background.jpg");
     background-size: cover;
     color: white;
     text-align: center;
-    padding: 100px 0;
+    padding: 150px 0; 
+    margin-top: 80px; 
 }
 
 .hero-content {
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6); 
+    padding: 30px; 
+    border-radius: 10px; 
+}
+
+.hero h2 {
+    font-size: 3em; 
+    margin-bottom: 10px;
+}
+
+.btn {
+    background-color: #e44d26; 
+    color: white;
+    border: none;
+    padding: 12px 25px; 
+    font-size: 1em; 
+    cursor: pointer;
+    border-radius: 5px; 
+    text-decoration: none; 
+    transition: background-color 0.3s ease; 
+    display: inline-block; 
+    margin-top: 20px; 
+}
+
+.btn:hover {
+    background-color: #f0ad4e; 
 }
 
 .featured-products {
-    padding: 20px;
+    padding: 40px; 
+    text-align: center;
 }
 
 .product-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
+    gap: 30px; 
+}
+
+.product {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease; 
+}
+
+.product:hover {
+    transform: translateY(-5px); 
 }
 
 .product img {
     width: 100%;
     height: auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
-/* Estilos para colores llamativos */
-h1 {
-    color: #e44d26; /* Ejemplo de color llamativo */
+.product h3 {
+    color: #e44d26; 
 }
 
-button {
-    background-color: #f0ad4e; /* Ejemplo de color llamativo */
+.about, .contact {
+    padding: 40px;
+    text-align: center;
+}
+
+.contact form {
+    max-width: 500px; 
+    margin: 20px auto;
+}
+
+.contact input, .contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd; 
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #333;
     color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
+    text-align: center;
+    padding: 10px;
 }
